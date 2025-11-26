@@ -20,7 +20,6 @@ When a sales order is confirmed, the option to create an invoice becomes availab
 :guilabel:`Create Invoice` button. When clicked, a :guilabel:`Create invoice(s)` pop-up appears.
 
 .. image:: down_payment/create-invoices-popup-form.png
-   :align: center
    :alt: Create invoices pop-up form that appears in Odoo Sales.
 
 .. note::
@@ -48,13 +47,13 @@ Once all fields are filled in, click the :guilabel:`Create Draft` button. Upon c
 Odoo reveals the :guilabel:`Customer Invoice Draft`.
 
 .. important::
-   If an :guilabel:`Invalid Operation` error appears, double-check that the
-   :doc:`invoicing policy <invoicing_policy>` is configured correctly. In some cases, for example,
-   the invoicing policy is configured to require delivery before invoicing.
+   If an :guilabel:`Invalid Operation` error appears, double-check that the :doc:`invoicing policy
+   <invoicing_policy>` is configured correctly. In some cases, for example, the invoicing policy is
+   configured to require delivery before invoicing.
 
 In the :guilabel:`Invoice Lines` tab of the :guilabel:`Customer Invoice Draft`, the down payment
-that was just configured in the :guilabel:`Create invoices` pop-up form appears as a
-:guilabel:`Product`.
+that was just configured in the :guilabel:`Create invoices` pop-up form appears under a new
+:guilabel:`Down Payments` section.
 
 .. _sales/invoicing/50-percent-down-payments:
 
@@ -66,7 +65,6 @@ Example: request 50% down payment
    Doors`) with :guilabel:`Ordered quantities` as the :guilabel:`Invoicing Policy`.
 
    .. image:: down_payment/cabinet-product-details.png
-      :align: center
       :alt: Cabinet with doors product form showcasing various details and fields.
 
 .. seealso::
@@ -82,14 +80,13 @@ When the order is confirmed (via the :guilabel:`Confirm` button), the quotation 
 order. Once this occurs, create and view the invoice by clicking :guilabel:`Create Invoice`.
 
 .. image:: down_payment/cabinet-sales-orders-confirmed.png
-   :align: center
    :alt: Cabinet with doors sales order that's been confirmed in the Odoo Sales application.
 
 Next, on the :guilabel:`Create invoices` pop-up window that appears, select :guilabel:`Down payment
 (percentage)`, and type `50` in the :guilabel:`Down Payment Amount` field.
 
 .. note::
-   The :guilabel:`Income Account` attached to the :guilabel:`Down payment` product can be changed.
+   The :guilabel:`Income Account` attached to the :guilabel:`Down payment` can be changed.
 
    For more information, check out the documentation on :ref:`income account modification on down
    payments <sales/invoicing/income-account-modification>`.
@@ -99,21 +96,19 @@ Next, on the :guilabel:`Create invoices` pop-up window that appears, select :gui
 
 Lastly, click :guilabel:`Create Draft Invoice` to create and view the invoice draft.
 
-Clicking :guilabel:`Create Draft Invoice` reveals the draft invoice, which includes the down
-payment as a :guilabel:`Product` in the :guilabel:`Invoice Lines` tab.
+Clicking :guilabel:`Create Draft Invoice` reveals the draft invoice, which includes the down payment
+under the :guilabel:`Down Payments` section of the :guilabel:`Invoice Lines` tab.
 
 From there, the invoice can be confirmed and posted by clicking :guilabel:`Confirm`. Confirming the
 invoice changes the status from :guilabel:`Draft` to :guilabel:`Posted`. It also reveals a new
 series of buttons at the top of the page.
 
 .. image:: down_payment/draft-invoice-sample.png
-   :align: center
    :alt: A sample draft invoice with down payment mentioned in Odoo Sales.
 
 From those buttons, the payment can be registered by clicking :guilabel:`Register Payment`.
 
 .. image:: down_payment/register-payment-button.png
-   :align: center
    :alt: Showcase of the Register Payment button on a confirmed customer invoice.
 
 Doing so reveals a :guilabel:`Register Payment` pop-up form, which is auto-populated with the
@@ -121,14 +116,12 @@ necessary information. Confirm the information provided is correct, and make any
 adjustments. When ready, click the :guilabel:`Create Payment` button.
 
 .. image:: down_payment/register-payment-pop-up-window.png
-   :align: center
    :alt: Showcase of the Register Payment pop-up window with create payment button.
 
 After clicking :guilabel:`Create Payment`, Odoo reveals the customer invoice, now with a green
 :guilabel:`In Payment` banner in the upper-right corner.
 
 .. image:: down_payment/customer-invoice-green-payment-banner.png
-   :align: center
    :alt: Customer Invoice with a green In Payment banner located in the upper-right corner.
 
 Now, when the customer wants to pay the remaining amount of the order, another invoice must be
@@ -138,7 +131,6 @@ Back on the sales order, a new :guilabel:`Down Payments` section is present in t
 Lines` tab, along with the down payment that was just invoiced and posted.
 
 .. image:: down_payment/down-payments-section-order-lines.png
-   :align: center
    :alt: The down payments section in the order lines tab of a sales order.
 
 Next, click the :guilabel:`Create Invoice` button.
@@ -147,7 +139,6 @@ On the :guilabel:`Create invoices` pop-up window that appears, there are two new
 :guilabel:`Already invoiced` and :guilabel:`Amount to invoice`.
 
 .. image:: down_payment/create-invoices-pop-up-already-invoiced.png
-   :align: center
    :alt: The deduct down payment option on the create invoices pop up in Odoo Sales.
 
 If the remaining amount is ready to be paid, select the :guilabel:`Regular Invoice` option. Odoo
@@ -167,7 +158,6 @@ Once again, the :guilabel:`Register Payment` appears, with all fields auto-popul
 necessary information, including the remaining amount left to be paid on the order.
 
 .. image:: down_payment/second-register-payment-popup.png
-   :align: center
    :alt: The second register payment pop-up form in Odoo sales.
 
 After confirming that information, click :guilabel:`Create Payment`. Doing so reveals the final
@@ -175,7 +165,6 @@ After confirming that information, click :guilabel:`Create Payment`. Doing so re
 Also, both down payments are present in the :guilabel:`Invoice Lines` tab.
 
 .. image:: down_payment/second-down-payment-in-payment-invoice.png
-   :align: center
    :alt: The second down payment invoice with in payment banner in Odoo Sales.
 
 At this point, the flow is now complete.
@@ -224,8 +213,8 @@ The *Solar Panel Installation* product is being used in this example.
 To configure a 100% down payment, begin by navigating to :menuselection:`Sales app --> New`, and add
 a :guilabel:`Customer` to the quote.
 
-Next, click :guilabel:`Add a product` in the :guilabel:`Order Lines` tab, and select the
-`Solar Panel Installation` product.
+Next, click :guilabel:`Add a product` in the :guilabel:`Order Lines` tab, and select the `Solar
+Panel Installation` product.
 
 Upon clicking the :guilabel:`Confirm` button, the quotation turns into a sales order. At that point,
 an invoice can now be created by clicking :guilabel:`Create Invoice` in the top-left corner.
@@ -234,12 +223,11 @@ On the :guilabel:`Create invoices` pop-up window that appears, select :guilabel:
 (percentage)`, and type `100` in the :guilabel:`Down Payment Amount` field.
 
 .. image:: down_payment/100p-down-payment-percentage.png
-   :align: center
    :alt: The Down payment (percentage) option selected with 100% set as the Down Payment.
 
 Next, click :guilabel:`Create Draft Invoice` to create an invoice draft. This will also bring the
-draft invoice into view, which includes the :guilabel:`Down payment` as a :guilabel:`Product` in the
-:guilabel:`Invoice Lines` tab.
+draft invoice into view, which includes the :guilabel:`Down payment` under the :guilabel:`Down
+Payments` section of the :guilabel:`Invoice Lines` tab.
 
 The invoice can now be confirmed and posted by clicking :guilabel:`Confirm`. Confirming the invoice
 changes the status from :guilabel:`Draft` to :guilabel:`Posted`. It also reveals a new series of
@@ -256,7 +244,6 @@ After clicking :guilabel:`Create Payment`, Odoo reveals the customer invoice, no
 :guilabel:`In Payment` banner in the upper-right corner.
 
 .. image:: down_payment/100p-invoice.png
-   :align: center
    :alt: Customer Invoice with a green In Payment banner located in the upper-right corner.
 
 The process is now complete, and the 100% down payment has been successfully applied.
@@ -266,22 +253,17 @@ The process is now complete, and the 100% down payment has been successfully app
 Income account modification on down payments
 ============================================
 
-To change or adjust the income account attached to the :guilabel:`Down Payment` product page, the
-*Accounting* app **must** be installed.
+.. important::
+   To change or adjust the income account attached to down payments, the **Accounting** app must be
+   installed. With the *Accounting* app installed, the :guilabel:`Accounting` column becomes
+   available on the draft invoice.
 
-Navigate to the :guilabel:`Products` page (:menuselection:`Sales app --> Products --> Products`),
-search for the `Down Payment` product in the search bar, and select it to reveal the product detail
-page.
+Navigate to the invoice to be modified by going to :menuselection:`Sales app --> Orders --> clicking
+the order in question --> Invoices smart button --> clicking the account in the Account column -->
+Search more...`.
 
-With the *Accounting* app installed, the :guilabel:`Accounting` tab becomes available on the product
-page.
-
-In the :guilabel:`Accounting` tab, the income account can be changed in the :guilabel:`Income
-Account` field, located in the :guilabel:`Receivables` section.
-
-.. image:: down_payment/income-account.png
-   :align: center
-   :alt: How to modify the income account link to down payments.
+In the :guilabel:`Search: Account` form, a different account be chosen from the list of pre-existing
+accounts. A new account can also be created by clicking the :guilabel:`New` button.
 
 .. seealso::
    :doc:`invoicing_policy`
